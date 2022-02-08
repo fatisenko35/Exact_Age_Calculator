@@ -23,11 +23,12 @@ birthdayPicker.addEventListener("change",() =>{
  if (new Date() < new Date(birthdayPicker.value)) {
      alert("Please enter valid date");
  }else{
-     countdown.style.transform = "scale(2)"
+     countdown.style.transform = "scale(2)";
+     document.body.style.backgroundImage = "url(./img/balloons.jpg)";
     setInterval(() =>{
 
     countdown.style.display = "flex";
-    document.body.style.backgroundImage = "url(./img/balloons.jpg)";
+   
   
     // Year
 
